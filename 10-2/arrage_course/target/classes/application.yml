@@ -1,0 +1,17 @@
+#datasource
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3309/s_course?serverTimezone=UTC&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root123
+    driver-class-name: com.mysql.jdbc.Driver
+  web:
+    resources:
+      static-locations: classpath:/static/
+      
+mybatis:
+  config-location:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.pxw.pojo
+  
+
